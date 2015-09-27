@@ -1,0 +1,438 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat)
+
+body
+  background url('https://dl.dropboxusercontent.com/u/3451598/assets/star.jpg') repeat center center fixed
+  background-size auto
+  //background-color #000
+  transition 2s ease-out
+
+  .mobile-nav.dark-bg
+    background-color #000
+    top 70px
+
+  header.header.dark-bg
+    background-color rgba(0,0,0,0.75)
+    position fixed
+    top 10px
+    left 10px
+    right 10px
+    z-index 3e9
+    height 70px !important
+
+    @media (max-width: 600px)
+      top 0
+      left 0
+      right 0
+
+    .mobile-menu-button
+      background-color transparent !important
+      color #fff
+      font-size 20px
+
+    .logo
+
+      h1.logo-text
+        text-transform uppercase
+
+      h1.logo-image
+        a
+          padding 10px
+          margin-right auto
+          margin-left auto
+
+    .categories-menu
+      text-transform uppercase
+      color #fff
+      font-weight 900
+      font-size 16px
+      letter-spacing 3px
+
+    .menu-menu
+      left 0
+      top 10px
+
+      .menu-contents
+        background-color rgba(0,0,0,1)
+        border-left 5px solid #1bb23a
+        border-radius 0
+        padding 0
+
+        li
+          padding 10px 20px
+          color #fff
+          border-bottom 1px solid #111
+
+          &:hover
+            background-color #1bb23a
+
+            .menu-item-wrapper .menu-sub-level .menu-description
+              color #333
+
+          .menu-item-wrapper
+
+            .menu-sub-level
+              color #fff
+              text-transform uppercase
+              font-weight 400
+              font-size 20px
+              letter-spacing 5px
+
+
+  .at-form
+    background-color transparent
+    padding 20px
+
+    .at-title
+      font-size 22px
+      text-transform uppercase
+      letter-spacing 5px
+      color #555
+      border-bottom 3px solid #555
+
+    .at-sep:before
+      border-bottom 3px solid #555
+
+    .at-sep:after
+      border-bottom 3px solid #555
+
+    .at-signup-link,
+    .at-signin-link,
+      border-top 3px solid #555
+
+    .at-pwd-form
+      form
+        .at-input
+          label
+            display none
+
+          input
+            padding 10px 20px
+            border-radius 5px
+            height auto
+            line-height 1
+            font-size 1.2em
+
+    .at-btn.submit
+      padding 10px 20px
+      text-transform uppercase
+      color #fff
+      font-weight 900
+
+
+  .tagline-banner-spacing
+    min-height 570px
+    height 570px
+    margin 0 20px
+    margin-bottom 10px
+    background-color #222
+    box-shadow 0 100px 65px rgba(0,0,0,0.4)
+
+  .custom-tagline-banner
+    position absolute
+    background url('https://dl.dropboxusercontent.com/u/3451598/assets/4e_bg2.jpg') no-repeat center center scroll
+    background-size cover
+    top 10px
+    left 10px
+    right 10px
+    min-height 650px
+    height 650px
+    background-color transparent
+    display flex
+    display -webkit-flex
+    flex-flow column nowrap
+    justify-content center
+    z-index 1
+
+    @media (max-width:600px)
+      top 0
+      left 0
+      right 0
+
+    h1
+      color #fff
+      text-transform uppercase
+      font-family "Montserrat"
+      font-size 100px
+      line-height 80px
+      font-weight 700
+      margin 0
+      margin-left 40px
+      text-align left
+      user-select none
+      -webkit-user-select none
+
+      &.alt
+        font-size 160px
+        line-height 125px
+        margin-left 35px
+
+      &.alt2
+        font-size 126px
+        line-height 102px
+        margin-left 35px
+
+      @media (max-width: 600px)
+        font-size 40px
+        line-height 34px
+
+        &.alt
+          font-size 60px
+          line-height 50px
+          margin-left 40px
+
+        &.alt2
+          font-size 50px
+          line-height 42px
+          margin-left 40px
+
+    p
+      color #eee
+      font-size 24px
+      margin 20px
+      margin-left 45px
+      user-select none
+      -webkit-user-select none
+
+      @media (max-width:600px)
+        font-size 18px
+        max-width 80%
+
+    form.join-mailing-list
+      padding 0
+      margin 0
+      margin-left 45px
+      margin-right auto
+      display flex
+      display -webkit-flex
+      flex-flow row nowrap
+
+      @media (max-width: 600px)
+        flex-flow column nowrap
+
+      input
+        font-size 20px
+        margin 0
+        padding 20px 40px
+        text-align center
+        border-radius 0
+        border-top-left-radius 5px
+        border-bottom-left-radius 5px
+
+        @media (max-width:600px)
+          font-size 18px
+          border-bottom-left-radius 0
+          border-top-right-radius 5px
+
+      button
+        width auto
+        padding 10px 40px
+        white-space nowrap
+        color #fff
+        font-weight 700
+        border-radius 0
+        border-top-right-radius 5px
+        border-bottom-right-radius 5px
+        font-weight 700
+        text-transform uppercase
+        font-size 14px
+
+        i
+          margin-left 5px
+
+        @media (max-width:600px)
+          padding 10px 20px
+          border-top-right-radius 0
+          border-bottom-left-radius 5px
+
+
+  h3.tagline
+    margin 20px 0
+    padding 20px 0
+
+    span
+      font-weight 100
+      color #fff
+      font-size 1.3em
+
+  div.inner-wrapper
+    background-color transparent
+    padding-top 90px
+
+    div.content-wrapper
+
+      div.posts-views-nav.grid-module
+        border-radius 0
+        background-color transparent
+        color #000
+
+        .menu-top-level
+          color #ddd
+          font-size 1.4em
+          font-weight 900
+          text-transform uppercase
+          font-style italic
+          display none
+
+          &:after
+            display none
+
+        a.menu-sub-level
+          color #1bb23a !important
+          font-size 1.4em
+          font-weight 900
+          text-transform uppercase
+          font-style italic
+
+          span
+            border 3px solid #1bb23a
+            padding 2px 10px
+
+      a.more-button
+        border 4px solid rgba(255,255,255,0.5)
+        text-transform uppercase
+        font-family "Montserrat"
+        color #1bb23a
+        margin-top 10px
+        border-radius 0
+        padding 10px
+        height auto
+        line-height 1
+
+        &:hover
+          color #1bb23a
+
+      h2.posts-day-heading
+        color #fff
+        margin-top 40px
+        margin-bottom 40px
+        text-align center
+        text-transform uppercase
+        font-style italic
+        font-weight 900
+        font-size 24px
+        font-style italic
+
+        @media (max-width: 600px)
+          font-size 18px
+
+      .category-title
+        color #aaa
+        font-size 50px
+        padding 10px 0
+        margin 20px 0
+        text-transform uppercase
+        font-weight 300
+        letter-spacing 15px
+        border-top 5px solid #555
+        border-bottom 5px solid #555
+
+        @media (max-width: 600px)
+          font-size 30px
+
+      div.post
+        background #222 !important
+        padding 0px
+        border-bottom 0
+        margin-bottom 5px
+        transition 400ms ease-out
+
+        &:hover
+          transition 700ms ease-out
+          background-color transparent !important
+
+        div.post-vote
+          margin auto 20px
+
+          div.vote-actions.voted.upvoted
+            border 1px solid #DD3416
+
+        h3.post-title
+          a
+            color #1bb23a !important
+            font-family "Montserrat"
+
+        div.post-thumbnail
+          margin-right 20px
+
+          @media (max-width: 600px)
+            margin-bottom 20px
+
+          a.post-thumbnail-link
+            width 120px
+            margin-left
+
+            img
+              width auto
+              height 100px
+
+        a.post-category
+          border 2px solid rgba(255,255,255,0.25)
+          background-color transparent
+          padding 2px 5px
+          color #1bb23a
+
+          &:last-of-type
+            margin-right 20px
+
+      div.no-posts
+        border 0
+        text-align center
+        text-transform uppercase
+        font-weight 900
+        color #aaa
+
+      p.cannot-comment-message
+        text-align center
+        margin 40px 0
+        color #aaa
+        letter-spacing 5px
+        font-size 14px
+        text-transform uppercase
+
+.post-body.markdown
+  color #ddd
+  background-color #000
+
+.sign-out-wrapper
+  min-height 80vh
+  display flex
+  display -webkit-flex
+  flex-flow column nowrap
+  justify-content center
+
+  h1
+    font-size 90px
+    line-height 80px
+    font-weight 900
+    text-transform uppercase
+    margin 0
+    text-align center
+
+    @media (max-width: 600px)
+      font-size 60px
+      line-height 50px
+
+  h3
+    margin 0
+    margin-top 10px
+    color #aaa
+    font-size 26px
+    line-height 26px
+    font-weight 300
+    text-align center
+
+  a
+    color darken(#1bb23a, 30%)
+    font-size 18px
+    text-align center
+    display block
+    margin-top 40px
+    text-transform uppercase
+    font-weight 900
+
+    &:hover
+      color #1bb23a
+      text-decoration underline
+
+    @media (max-width: 600px)
+      font-size 16px
